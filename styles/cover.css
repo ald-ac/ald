@@ -24,11 +24,13 @@
     border: inherit;
 }
 
-/*Put photo into first octagon*/
-.photoOctagon {
-    background-image: url(../assets/profile.jpg);
-    background-repeat: no-repeat;
-    background-size: 380px;
+.profilePhoto {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    overflow: hidden;
+    width: 340px;
+    transform: rotate(-45deg);
+    margin: 0 auto;
 }
 
 .coverRow {
