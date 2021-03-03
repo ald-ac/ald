@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 18%;
+}
+
+.headerLogo {
+    width: 150px;
+}
+
+header > nav > ul > li {
+    display: inline;
+    padding: 0 40px;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}

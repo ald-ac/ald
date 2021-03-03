@@ -1,0 +1,12 @@
+@import url("styles/header.css");
+@import url("styles/cover.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.presentation {
+    background-color: #293033;
+}
