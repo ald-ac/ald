@@ -35,8 +35,6 @@
 
 .coverRow {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -62,9 +60,18 @@ h1 {
 }
 
 .cover {
-    width: 100%;
-    padding: 0 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 10px;
+}
+
+.elementR {
+    padding-left: 75px;
+}
+
+.elementL {
+    padding-right: 75px;
 }
 
 /*Social media icons*/
