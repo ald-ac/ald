@@ -1,0 +1,30 @@
+.recentProject {
+    padding: 40px 18% 20px;
+}
+
+.recentProject > section > article > img {
+    width: 200px;
+}
+
+.recentProject > section > article {
+    width: 90%;
+    background-color: rgba(41, 48, 51, 0.04);
+    margin: 45px auto;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.recentProject > section > article > div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.recentProject > section > article > div > p, a {
+    padding-top: 15px;
+}
+
+.recentProject > section > article > div > p {
+    text-align: justify;
+}
