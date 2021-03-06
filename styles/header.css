@@ -3,6 +3,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 18%;
+    max-width: 1400px; 
+    margin: 0 auto;
 }
 
 .headerLogo {

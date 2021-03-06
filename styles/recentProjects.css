@@ -1,5 +1,12 @@
 .recentProject {
     padding: 40px 18% 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: #293033;
+}
+
+.recentProject > hr {
+    border-color: #293033;
 }
 
 .recentProject > section > article > img {
@@ -22,9 +29,19 @@
 }
 
 .recentProject > section > article > div > p, a {
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .recentProject > section > article > div > p {
+    font-size: 12pt;
+    font-weight: 400;
     text-align: justify;
+    line-height: 151%;
+}
+
+.recentProject > section > article > div > a {
+    text-align: center;
+    background-color: #293033;
+    color: #ffffff;
+    padding: 8px 0;
 }
