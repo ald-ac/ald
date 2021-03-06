@@ -1,6 +1,7 @@
 @import url("./styles/header.css");
 @import url("./styles/cover.css");
 @import url("./styles/recentProjects.css");
+@import url("./styles/banner.css");
 
 * {
     margin: 0;
