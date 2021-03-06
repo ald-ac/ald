@@ -1,0 +1,31 @@
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 18%;
+    max-width: 1400px; 
+    margin: 0 auto;
+}
+
+.headerLogo {
+    width: 150px;
+}
+
+header > nav > ul > li {
+    display: inline;
+    padding: 0 40px;
+}
+
+header > nav > ul > li > a, footer > nav > ul > li > a, footer > p {
+    color: #ffffff;
+}
+
+footer > nav > ul > li {
+    display: inline;
+    padding: 0 20px;
+}
+
+footer {
+    padding: 30px 18%;
+    margin-top: 64px;
+}

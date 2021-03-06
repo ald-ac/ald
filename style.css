@@ -1,4 +1,4 @@
-@import url("./styles/header.css");
+@import url("./styles/headerAndFooter.css");
 @import url("./styles/cover.css");
 @import url("./styles/recentProjects.css");
 @import url("./styles/banner.css");
@@ -10,7 +10,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.presentation {
+.presentation, .footerMedia {
     background-color: #293033;
 }
 
