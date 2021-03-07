@@ -14,6 +14,10 @@
     background-color: #293033;
 }
 
+.projectProjects {
+    min-height: calc(100vh - 180px); /*to footer on bottom (page projects)*/
+}
+
 h2 {
     font-size: 14pt;
     font-weight: 500;

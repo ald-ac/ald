@@ -1,19 +1,19 @@
-.recentProject {
+.project {
     padding: 40px 18% 20px;
     max-width: 1400px;
     margin: 0 auto;
     color: #293033;
 }
 
-.recentProject > hr {
+.project > hr {
     border-color: #293033;
 }
 
-.recentProject > section > article > img {
+.project > section > article > img {
     width: 200px;
 }
 
-.recentProject > section > article {
+.project > section > article {
     width: 90%;
     background-color: rgba(41, 48, 51, 0.04);
     margin: 45px auto;
@@ -22,24 +22,24 @@
     align-items: center;
 }
 
-.recentProject > section > article > div {
+.project > section > article > div {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
 }
 
-.recentProject > section > article > div > p, a {
+.project > section > article > div > p, a {
     margin-top: 15px;
 }
 
-.recentProject > section > article > div > p {
+.project > section > article > div > p {
     font-size: 12pt;
     font-weight: 400;
     text-align: justify;
     line-height: 151%;
 }
 
-.recentProject > section > article > div > a {
+.project > section > article > div > a {
     text-align: center;
     background-color: #293033;
     color: #ffffff;
