@@ -2,6 +2,7 @@
 @import url("./styles/cover.css");
 @import url("./styles/recentProjects.css");
 @import url("./styles/banner.css");
+@import url("./styles/resume.css");
 
 * {
     margin: 0;
