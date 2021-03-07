@@ -1,14 +1,3 @@
-.project {
-    padding: 40px 18% 20px;
-    max-width: 1400px;
-    margin: 0 auto;
-    color: #293033;
-}
-
-.project > hr {
-    border-color: #293033;
-}
-
 .project > section > article > img {
     width: 200px;
 }
