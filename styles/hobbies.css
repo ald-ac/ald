@@ -1,0 +1,68 @@
+.hobbies {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.octagonWrapP {
+    width:250px;
+    height:250px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.octagonP {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    overflow: hidden;
+    transform: rotate(45deg);
+    border: 1px;
+}
+.octagonP:before {
+    position: absolute;
+    /* There needs to be a negative value here to cancel
+     * out the width of the border. It's currently -3px,
+     * but if the border were 5px, then it'd be -5px.
+     */
+    top: -1px; right: -1px; bottom: -1px; left: -1px;
+    transform: rotate(45deg);
+    content: '';
+    border: inherit;
+}
+
+.octagonDescP {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    overflow: hidden;
+    transform: rotate(-45deg);
+    color: #ffffff;
+    padding: 60px 30px 30px 30px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+}
+
+.even {
+    padding-top: 176px;
+    margin-left: -73px;
+    margin-right: -73px;
+}
+
+.odd {
+    padding-bottom: 176px;
+}
+
+.firstO {
+    background-color: #303340;
+}
+
+.secondO {
+    background-color: #37404A;
+}
+
+.thirdO {
+    background-color: #37494A;
+}
+
+.fourthO {
+    background-color: #30403C;
+}
