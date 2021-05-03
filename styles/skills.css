@@ -7,7 +7,32 @@
     background-color: #293033;
 }
 
+.other-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .main-skills > img {
     width: 150px;
+}
 
+.skill {
+    margin: 40px auto 0px;
+    width: 250px;
+    height: 250px;
+    padding: 10px 20px;
+    background-color: #293033;
+    color: #ffffff;
+    text-align: center;
+}
+
+.skill > ul > li {
+    font-size: 16pt;
+    font-weight: 100;
+    list-style: none;
+    line-height: 200%;
+}
+
+.skill > h2 {
+    margin-top: 10px;
 }
