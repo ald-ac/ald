@@ -1,0 +1,13 @@
+.main-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    background-color: #293033;
+}
+
+.main-skills > img {
+    width: 150px;
+
+}
