@@ -1,7 +1,7 @@
 header, footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 18%;
     max-width: 1400px; 
     margin: 0 auto;
@@ -9,24 +9,76 @@ header, footer {
 
 header {
     height: 100px; /*to footer on bottom*/
+    flex-direction: column;
+    text-align: center;
 }
 
 .headerLogo {
+    margin-top: 15px;
     width: 150px;
-}
-
-header > nav > ul > li {
-    display: inline;
-    padding: 0 40px;
 }
 
 header > nav > ul > li > a, footer > nav > ul > li > a, footer > p {
     color: #ffffff;
 }
 
+/* Menu-mobile */
+#menu-bar { /*Button to display the menu*/
+    display: none;
+}
+
+.icon-menu { /*icon menu*/
+    margin-top: 15px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.label-menu {
+    transition: all 0.6s;
+    transform-origin: center center;
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.menu {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    background-color: #293033;
+    height: 200px;
+    transition: all 0.5s;
+    transform: translateY(-250%);
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    margin-top: 0;
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 18px;
+}
+
+.menu a:hover {
+    background-color: #7FFF2A;
+    color: #293033;
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateY(0%);
+}
+
+#menu-bar:checked + .label-menu {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 footer > nav > ul > li {
     display: inline;
-    padding: 0 20px;
 }
 
 footer {
