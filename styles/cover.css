@@ -1,6 +1,6 @@
 .octagonWrap {
-    width:380px;
-    height:380px;
+    width:250px;
+    height:250px;
     float: left;
     position: relative;
     overflow: hidden;
@@ -18,6 +18,7 @@
      * out the width of the border. It's currently -3px,
      * but if the border were 5px, then it'd be -5px.
      */
+    /*border = top/r/b/l*/
     top: -20px; right: -20px; bottom: -20px; left: -20px;
     transform: rotate(45deg);
     content: '';
@@ -28,19 +29,21 @@
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     overflow: hidden;
-    width: 340px;
+    width: 210px; /*width/height - 40px*/
     transform: rotate(-45deg);
     margin: 0 auto;
 }
 
 .coverRow {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 h1 {
     font-family: 'Share Tech Mono';
-    font-size: 60pt;
+    font-size: 50pt;
     font-weight: 200;
     text-align: center;
     color: #ffffff;
@@ -52,9 +55,9 @@ h1 {
     overflow: hidden;
     transform: rotate(-45deg);
     color: #ffffff;
-    padding: 60px 30px 30px 30px;
+    padding: 40px 22px 10px 22px; /*size / size-30 / size-30 / size-30*/
     text-align: justify;
-    font-size: 16.4pt;
+    font-size: 10.5pt;
     font-weight: 200;
 }
 
@@ -65,12 +68,13 @@ h1 {
     padding-bottom: 10px;
 }
 
-.elementR {
+/* .elementR {
     padding-left: 75px;
-}
+} */
 
 .elementL {
-    padding-right: 75px;
+    /* padding-right: 75px; */
+    margin-bottom: 20px;
 }
 
 /*Social media icons*/
