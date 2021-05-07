@@ -3,18 +3,18 @@ header, footer {
     align-items: center;
     justify-content: center;
     padding: 20px 18%;
-    max-width: 1400px; 
+    /* max-width: 1400px;  */
     margin: 0 auto;
 }
 
 header {
-    height: 100px; /*to footer on bottom*/
+    /* height: 100px; to footer on bottom */
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .headerLogo {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     width: 150px;
 }
 
@@ -41,17 +41,15 @@ header > nav > ul > li > a, footer > nav > ul > li > a, footer > p {
 }
 
 .menu {
+    text-align: center;
     position: absolute;
-    top: 150px;
+    z-index: 1;
+    top: 120px;
     width: 100%;
     background-color: #293033;
     height: 200px;
     transition: all 0.5s;
-    transform: translateY(-250%);
-}
-
-.menu li {
-    list-style: none;
+    transform: translateY(-175%);
 }
 
 .menu a {
