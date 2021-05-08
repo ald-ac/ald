@@ -100,6 +100,11 @@ footer {
         display: inline;
     }
 
+    .menu ul > li {
+        list-style: none;
+        margin: 0 40px;
+    }
+
     .icon-menu, .label-menu{
         display: none;
     }
@@ -107,11 +112,6 @@ footer {
     header {
         justify-content: space-between;
         flex-direction: row;
-    }
-
-    .menu ul > li {
-        list-style: none;
-        margin: 0 40px;
     }
 
     header, footer {
