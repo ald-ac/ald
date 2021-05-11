@@ -130,6 +130,10 @@ footer {
 
     footer > nav > ul > li {
         display: inline;
-        padding: 2px 20px;
+        padding: 2px 10px;
+    }
+
+    footer {
+        justify-content: space-between;
     }
 }
