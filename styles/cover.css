@@ -68,10 +68,6 @@ h1 {
     padding-bottom: 10px;
 }
 
-/* .elementR {
-    padding-left: 75px;
-} */
-
 .elementL {
     /* padding-right: 75px; */
     margin-bottom: 20px;
@@ -87,4 +83,19 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .coverRow {
+        flex-direction: row;
+    }
+
+    .elementR {
+        padding-left: 75px;
+    }
+
+    .elementL {
+        padding-right: 75px;
+    }
 }
