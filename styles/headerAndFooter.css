@@ -75,6 +75,10 @@ footer > nav > ul > li {
     padding: 2px 10px;
 }
 
+footer > nav > ul > li >a:hover {
+    color: #7FFF2A;
+}
+
 footer {
     padding: 30px 0;
     /*to footer on bottom*/
@@ -122,5 +126,10 @@ footer {
     .menu a:hover {
         background-color: #293033;
         color: #7FFF2A;
+    }
+
+    footer > nav > ul > li {
+        display: inline;
+        padding: 2px 20px;
     }
 }
