@@ -47,5 +47,17 @@
 
     .project > section > article > div {
         padding-left: 30px;
+        text-align: left;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .project > section > article > img {
+        width: 200px;
+    }
+
+    .project > section > article > div > p {
+        font-size: 12pt;
     }
 }
