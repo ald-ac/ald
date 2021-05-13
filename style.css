@@ -45,9 +45,21 @@ hr {
 }
 
 .nSection {
-    padding: 40px 10% 20px;
-    /* desktop - 18% */
-    /* max-width: 1400px; */
+    padding: 40px 14% 20px;
     margin: 0 auto;
     color: #293033;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .nSection {
+        padding: 40px 18% 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .nSection {
+        max-width: 1400px;
+    }
 }

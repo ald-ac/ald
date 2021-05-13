@@ -3,7 +3,7 @@
 }
 
 .project > section > article {
-    width: 100%;
+    width: 90%;
     /* desktop - 90% */
     background-color: rgba(41, 48, 51, 0.04);
     margin: 45px auto;
@@ -37,4 +37,15 @@
     background-color: #293033;
     color: #ffffff;
     padding: 8px 0;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .project > section > article {
+        flex-direction: row;
+    }
+
+    .project > section > article > div {
+        padding-left: 30px;
+    }
 }
