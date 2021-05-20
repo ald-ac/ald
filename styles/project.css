@@ -1,6 +1,7 @@
 .individualProject {
     background-color: rgba(41, 48, 51, 0.04);
-    margin-top: 40px;
+    margin: 40px;
+    width: 90%;
 }
 
 .desc-header {
@@ -33,3 +34,18 @@
     text-align: justify;
     line-height: 151%;
 }
+
+.project-buttons {
+    margin: 0 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.project-buttons > a {
+    text-align: center;
+    background-color: #293033;
+    color: #ffffff;
+    padding: 8px 0;
+    display: inline;
+  }
