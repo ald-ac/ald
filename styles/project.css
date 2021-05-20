@@ -1,0 +1,28 @@
+.individualProject {
+    background-color: rgba(41, 48, 51, 0.04);
+    margin-top: 40px;
+}
+
+.desc-header {
+    display: flex;
+    align-items: center;
+}
+
+.desc-header > img{
+    width: 120px;
+    margin: 20px 20px;
+}
+
+.desc-header > h3 {
+    margin-left: 5px;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-images > img {
+    width: 380px;
+    margin: 10px auto;
+}
