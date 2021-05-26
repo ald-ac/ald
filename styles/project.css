@@ -14,7 +14,9 @@
     margin: 20px 20px;
 }
 
-.desc-header > h3 {
+.desc-header > h1 {
+    font-size: 22pt;
+    color: #293033;
     margin-left: 5px;
 }
 
@@ -36,16 +38,18 @@
 }
 
 .project-buttons {
-    margin: 0 20px;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
 .project-buttons > a {
+    font-size: 14pt;
+    margin: 0 20px;
     text-align: center;
     background-color: #293033;
     color: #ffffff;
+    width: 100%;
     padding: 8px 0;
     display: inline;
   }
