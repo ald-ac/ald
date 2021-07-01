@@ -1,5 +1,6 @@
-let projects;
-const url = "http://localhost:1337";
+let projects, projectsSection = document.querySelector('#projects');
+const url = "http://localhost:1337", 
+    recentProjects = document.querySelector('#recentProjects');
 
 //get projects
 const getProjects = async ()=> {
@@ -35,10 +36,13 @@ function buildHTML() {
         profileImage = project.profilePicture;
         shortDescription = project.shortDescription;
 
-        //stop
-        if(index >= 2) {
-            return;
-        }
+        //stop if we are on index.html
+        if(recentProjects != null) {
+            if(index >= 2) {
+                projectsSection = recentProjects;
+                return;
+            }
+        } 
 
         let htmlProject = document.createElement('article');
         htmlProject.innerHTML = `
@@ -53,7 +57,7 @@ function buildHTML() {
         fragment.appendChild(htmlProject);
     });
 
-    document.querySelector('#projects').appendChild(fragment);
+    projectsSection.appendChild(fragment);
 }
 
 //Listeners
