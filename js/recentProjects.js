@@ -29,23 +29,28 @@ function buildHTML() {
         return new Date(b.date) - new Date(a.date);
     });
 
-    projects.forEach( project => {
+    projects.some( (project, index) => {
     //important data
-            name = project.name; 
-            profileImage = project.profilePicture;
-            shortDescription = project.shortDescription;
+        name = project.name; 
+        profileImage = project.profilePicture;
+        shortDescription = project.shortDescription;
 
-            let htmlProject = document.createElement('article');
-            htmlProject.innerHTML = `
-                <img src="${profileImage}" alt="${name}">
-                <div>
-                    <h3>${name}</h3>
-                    <p>${shortDescription}</p>
-                    <a href="http://">Detalles</a>
-                </div>
-            `;
-            console.log('Todo bien hasta el ordenamiento');           
-            fragment.appendChild(htmlProject);
+        //stop
+        if(index >= 2) {
+            return;
+        }
+
+        let htmlProject = document.createElement('article');
+        htmlProject.innerHTML = `
+            <img src="${profileImage}" alt="${name}">
+            <div>
+                <h3>${name}</h3>
+                <p>${shortDescription}</p>
+                <a href="http://">Detalles</a>
+            </div>
+        `;
+                      
+        fragment.appendChild(htmlProject);
     });
 
     document.querySelector('#projects').appendChild(fragment);
