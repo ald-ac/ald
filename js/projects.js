@@ -7,7 +7,7 @@ const projectsSection = document.querySelector('#projects');
 document.addEventListener('DOMContentLoaded', loadProjects);
 
 async function loadProjects() {
-    const projects = await getProjects();
+    const projects = await getProjects(false);
     buildHTML(projects);
 }
 

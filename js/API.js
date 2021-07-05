@@ -1,19 +1,17 @@
 const url = "http://localhost:1337";
 
 //get projects
-export const getProjects = async () => {
+export const getProjects = async limit => {
     try {
-        const res = await fetch(url+'/projects'),
+        //Order by date from API
+        let urlP = limit ? url+'/projects?_sort=date&_limit=2' : url+'/projects?_sort=date';
+
+        const res = await fetch(urlP),
         projects = await res.json(); 
 
         if(!res.ok) throw {
             status:res.status, statusText:res.statusText
         }
-
-        //Order by most recent
-        projects.sort(function(a,b) {
-            return new Date(b.date) - new Date(a.date);
-        });
 
         return projects;
 

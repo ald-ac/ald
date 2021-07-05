@@ -7,21 +7,16 @@ const recentProjects = document.querySelector('#recentProjects');
 document.addEventListener('DOMContentLoaded', loadProjects);
 
 async function loadProjects() {
-    const projects = await getProjects();
+    const projects = await getProjects(true);
     buildHTML(projects);
 }
 
 function buildHTML(projects) {
     let fragment = document.createDocumentFragment(); 
 
-    projects.some( (project, index) => {
+    projects.forEach( project => {
     //important data
     const {id, name, profilePicture, shortDescription } = project;
-
-        //stop only two most recents
-        if(index >= 2) {
-            return;
-        }
 
         let htmlProject = document.createElement('article');
         htmlProject.innerHTML = `
