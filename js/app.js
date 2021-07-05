@@ -1,7 +1,7 @@
 import { getProjects } from './API.js';
 
 //Selectors
-const projectsSection = document.querySelector('#projects');
+const recentProjects = document.querySelector('#recentProjects');
 
 //Listeners
 document.addEventListener('DOMContentLoaded', loadProjects);
@@ -14,9 +14,14 @@ async function loadProjects() {
 function buildHTML(projects) {
     let fragment = document.createDocumentFragment(); 
 
-    projects.forEach( (project) => {
+    projects.some( (project, index) => {
     //important data
     const {id, name, profilePicture, shortDescription } = project;
+
+        //stop only two most recents
+        if(index >= 2) {
+            return;
+        }
 
         let htmlProject = document.createElement('article');
         htmlProject.innerHTML = `
@@ -39,5 +44,6 @@ function buildHTML(projects) {
         fragment.appendChild(htmlProject);
     });
 
-    projectsSection.appendChild(fragment);
+    recentProjects.appendChild(fragment);
 }
+
