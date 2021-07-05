@@ -1,4 +1,4 @@
-const url = "http://localhost:1337";
+const url = "https://api-aldpage.herokuapp.com";
 
 //get projects
 export const getProjects = async limit => {
