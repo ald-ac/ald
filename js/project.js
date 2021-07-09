@@ -29,6 +29,13 @@ function buildHTML(project) {
             <h1>${name}</h1>
         </div>
     `;
+
+    //Description project
+    let descriptionHTML = document.createElement('p');
+    descriptionHTML.classList.add('project-description');
+    descriptionHTML.textContent = description;
+    individualProject.appendChild(descriptionHTML);
+
     //Images
     let images = document.createElement('div');
     images.classList.add('project-images');
@@ -40,12 +47,6 @@ function buildHTML(project) {
     });
     //Adding to html project
     individualProject.appendChild(images);
-
-    //Description project
-    let descriptionHTML = document.createElement('p');
-    descriptionHTML.classList.add('project-description');
-    descriptionHTML.textContent = description;
-    individualProject.appendChild(descriptionHTML);
 
     let buttons = document.createElement('div');
     buttons.classList.add('project-buttons');
