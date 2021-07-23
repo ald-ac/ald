@@ -1,0 +1,82 @@
+.description-me {
+    margin-top: 20px;
+}
+
+.java {
+    font-size: 6pt;
+    font-family: monospace;
+}
+
+.morado {
+    font-family: monospace;
+    color: #820059;
+    font-weight: 900;
+}
+
+.cafe {
+    font-family: monospace;
+    color: #6A3E40;
+}
+
+.azul {
+    font-family: monospace;
+    color: #0000C0;
+}
+
+.present-text {
+    margin-top: 20px;
+    background-color: #293033;
+    padding: 10px 10px;
+    color: #ffffff;
+}
+
+.present-text > div {
+    display: flex;
+    align-items: center;
+}
+
+.present-text > div > img {
+    margin-right: 5px;
+    width: 20px;
+}
+
+.present-text > p {
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.resalt {
+    color: #7FFF2A;
+    font-weight: 900;
+}
+
+.down-class {
+    margin-top: 10px;
+}
+
+.down-class > a {
+    color: #293033;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .java {
+        font-size: 10pt;
+    }
+
+    .present-text > p {
+        font-size: 14pt;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .java {
+        font-size: 12pt;
+    }
+
+    .present-text > p {
+        font-size: 16pt;
+    }
+}
