@@ -33,5 +33,7 @@
 }
 
 .skill > h2 {
+    font-weight: 400;
+    color: #ffffff;
     margin-top: 10px;
 }

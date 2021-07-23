@@ -17,7 +17,7 @@
 
 .hobbie > img {
     display: block;
-    width: 300px;
+    width: 250px;
 }
 
 .overlay {
@@ -43,3 +43,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+/* Tablet */
+@media (min-width: 768px) {
+    .hobbie > img {
+        width: 300px;
+    }
+}

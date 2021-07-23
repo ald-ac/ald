@@ -32,7 +32,6 @@
 }
 
 .project-description {
-    font-size: 12pt;
     margin: 20px 20px;
     text-align: justify;
     line-height: 151%;
@@ -45,7 +44,7 @@
 }
 
 .project-buttons > a {
-    /* font-size: 14pt; */
+    font-size: 13pt;
     margin: 10px 20px;
     text-align: center;
     background-color: #293033;
@@ -56,6 +55,10 @@
 
   /* Tablet */
 @media (min-width: 768px) {
+    .desc-header > h1 {
+        font-size: 28pt;
+    }
+
     .desc-header > img{
         margin: 0 20px;
         width: 100px;
@@ -68,14 +71,18 @@
     .project-images > img {
         width: 300px;
     }
+
+    .project-description {
+        font-size: 14pt;
+    }
+
+    .project-buttons > a {
+        font-size: 16pt;
+    }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
-    .desc-header > h1 {
-        font-size: 22pt;
-    }
-
     .desc-header > img{
         width: 130px;
     }
@@ -86,8 +93,7 @@
 
     .project-buttons > a {
         width: 100%;
-        font-size: 14pt;
-      }
+    }
 
     .project-buttons {
         flex-direction: row;

@@ -27,7 +27,7 @@
 }
 
 .project > section > article > div > p {
-    font-size: 10.5pt;
+    font-size: 12pt;
     font-weight: 400;
     text-align: justify;
     line-height: 151%;
@@ -50,6 +50,14 @@
         padding-left: 30px;
         text-align: left;
     }
+
+    .project > section > article > div > p {
+        font-size: 15pt;
+    }
+
+    .project > section > article > div > a {
+        font-size: 16pt;
+    }
 }
 
 /* Desktop */
@@ -58,7 +66,7 @@
         width: 200px;
     }
 
-    .project > section > article > div > p {
+    /* .project > section > article > div > p {
         font-size: 12pt;
-    }
+    } */
 }
