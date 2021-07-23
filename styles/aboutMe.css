@@ -48,7 +48,6 @@
 
 .resalt {
     color: #7FFF2A;
-    font-weight: 900;
 }
 
 .down-class {
@@ -67,6 +66,10 @@
 
     .present-text > p {
         font-size: 14pt;
+    }
+
+    .resalt {
+        font-weight: 900;
     }
 }
 
