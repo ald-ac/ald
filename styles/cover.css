@@ -1,43 +1,8 @@
-.octagonWrap {
-    width:250px;
-    height:250px;
-    float: left;
-    position: relative;
-    overflow: hidden;
-}
-.octagon {
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    overflow: hidden;
-    transform: rotate(45deg);
-    border: 20px solid #23282B;
-}
-.octagon:before {
-    position: absolute;
-    /* There needs to be a negative value here to cancel
-     * out the width of the border. It's currently -3px,
-     * but if the border were 5px, then it'd be -5px.
-     */
-    /*border = top/r/b/l*/
-    top: -20px; right: -20px; bottom: -20px; left: -20px;
-    transform: rotate(45deg);
-    content: '';
-    border: inherit;
-}
-
-.profilePhoto {
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    overflow: hidden;
-    width: 210px; /*width/height - 40px*/
-    transform: rotate(-45deg);
-    margin: 0 auto;
-}
-
 .coverRow {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
 
 h1 {
@@ -48,28 +13,35 @@ h1 {
     color: #ffffff;
 }
 
-.octagonDesc {
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    overflow: hidden;
-    transform: rotate(-45deg);
-    color: #ffffff;
-    padding: 40px 22px 10px 22px; /*size / size-30 / size-30 / size-30*/
-    text-align: justify;
-    font-size: 10.5pt;
-    font-weight: 200;
-}
-
 .cover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .elementL {
     /* padding-right: 75px; */
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.elementR {
+    margin-top: 30px;
+}
+
+.profilePhoto {
+    width: 250px;
+    --stroke-pos: 6px;
+    --stroke-neg: -6px;
+    --stroke-color: #23282B;
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color)) 
+      drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
+      drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+      drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+      drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color)) 
+      drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+      drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+      drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));   
 }
 
 /*Social media icons*/
@@ -101,21 +73,11 @@ h1 {
 
 /* Desktop */
 @media (min-width: 1024px) {
-    .octagonWrap {
-        width: 380px;
-        height: 380px;
-    }
-
     .profilePhoto {
         width: 340px; /*width/height - 40px*/
     }
 
     h1 {
         font-size: 60pt;
-    }
-
-    .octagonDesc {
-        padding: 80px 30px 30px 30px; /*size / size-30 / size-30 / size-30*/
-        font-size: 16.4pt;
     }
 }
