@@ -163,3 +163,24 @@ footer {
         justify-content: space-between;
     }
 }
+
+/* To animations */
+#photo1 {
+    transition: all 0.5s;
+    transform: translateX(-200%);
+}
+
+#title1 {
+    transition: all 0.5s;
+    transform: translateX(200%);
+}
+
+#photo2 {
+    transition: all 0.5s;
+    transform: translateX(200%);
+}
+
+#title2 {
+    transition: all 0.5s;
+    transform: translateX(-200%);
+}
