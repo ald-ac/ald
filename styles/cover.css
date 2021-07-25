@@ -81,3 +81,20 @@ h1 {
         font-size: 60pt;
     }
 }
+
+/* To animations */
+#photo1 {
+    transform: translateX(-200%);
+}
+
+#title1 {
+    transform: translateX(200%);
+}
+
+#photo2 {
+    transform: translateX(200%);
+}
+
+#title2 {
+    transform: translateX(-200%);
+}
