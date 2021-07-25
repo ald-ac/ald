@@ -15,7 +15,7 @@ header {
     width: 150px;
 }
 
-header > nav > ul > li > a, footer > nav > ul > li > a, footer > p {
+footer > p {
     color: #ffffff;
 }
 
@@ -82,8 +82,23 @@ footer > nav > ul > li {
     padding: 2px 10px;
 }
 
+footer > nav > ul > li > a {
+    height: 0;
+    padding: 0;
+    color: #ffffff;
+    display: inline;
+    overflow: hidden;
+    background: linear-gradient(to right, #7FFF2A, #7FFF2A 50%, #ffffff 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 500ms ease;
+}
+
 footer > nav > ul > li >a:hover {
-    color: #7FFF2A;
+    background-position: 0 100%;
 }
 
 footer {
