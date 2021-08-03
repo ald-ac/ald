@@ -6,11 +6,18 @@
     width: 90%;
     /* desktop - 90% */
     background-color: rgba(41, 48, 51, 0.04);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin: 45px auto;
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 500ms;
+}
+
+.project > section > article:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .project > section > article > div {
@@ -38,6 +45,11 @@
     background-color: #293033;
     color: #ffffff;
     padding: 8px 0;
+    transition: all 500ms;
+}
+
+.project > section > article > div > a:hover {
+    color: #7FFF2A;
 }
 
 /* Tablet */
