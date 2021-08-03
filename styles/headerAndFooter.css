@@ -9,6 +9,8 @@ header {
     /* height: 100px; to footer on bottom */
     padding: 20px 0;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
 .headerLogo {
@@ -40,7 +42,6 @@ footer > p {
 .menu {
     text-align: center;
     position: absolute;
-    z-index: 1;
     top: 120px;
     width: 100%;
     height: 200px;

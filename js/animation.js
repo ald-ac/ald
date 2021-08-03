@@ -1,13 +1,15 @@
 let elements = [];
+
+//Header
+document.querySelector('header').style.transform = 'translateY(-200%)';
+elements.push(document.querySelector('header'));
+
 //Cover
 elements.push(document.querySelector('#photo1'));
 elements.push(document.querySelector('#title1'));
 elements.push(document.querySelector('#photo2'));
 elements.push(document.querySelector('#title2'));
 
-//Header
-document.querySelector('header').style.transform = 'translateY(-200%)';
-elements.push(document.querySelector('header'));
 
 //time transition
 const timeTransition = 0.7;
