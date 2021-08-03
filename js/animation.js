@@ -6,6 +6,7 @@ elements.push(document.querySelector('#photo2'));
 elements.push(document.querySelector('#title2'));
 
 //Header
+document.querySelector('header').style.transform = 'translateY(-200%)';
 elements.push(document.querySelector('header'));
 
 //time transition
