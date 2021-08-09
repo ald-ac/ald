@@ -4,9 +4,8 @@
     flex-wrap: wrap;
 }
 
-.hobbies > img {
+.hobbies>img {
     width: 300px;
-    
 }
 
 .hobbie {
@@ -15,7 +14,7 @@
     height: 100%;
 }
 
-.hobbie > img {
+.hobbie>img {
     display: block;
     width: 250px;
 }
@@ -30,9 +29,9 @@
     width: 100%;
     background-color: #293033;
     opacity: .5;
-  }
+}
 
-  .text {
+.text {
     color: #ffffff;
     font-size: 18pt;
     position: absolute;
@@ -42,11 +41,12 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
 /* Tablet */
+
 @media (min-width: 768px) {
-    .hobbie > img {
+    .hobbie>img {
         width: 300px;
     }
 }

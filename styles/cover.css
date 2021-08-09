@@ -34,18 +34,12 @@ h1 {
     --stroke-pos: 6px;
     --stroke-neg: -6px;
     --stroke-color: #23282B;
-    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color)) 
-      drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
-      drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
-      drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
-      drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color)) 
-      drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
-      drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
-      drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));   
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color)) drop-shadow(var(--stroke-neg) 0 var(--stroke-color)) drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color)) drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color)) drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color)) drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color)) drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color)) drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));
 }
 
 /*Social media icons*/
-.socialMedia > a > img{
+
+.socialMedia>a>img {
     width: 35px;
     transition: all 300ms;
 }
@@ -57,37 +51,38 @@ h1 {
     justify-content: space-between;
 }
 
-.socialMedia > a > img:hover{
+.socialMedia>a>img:hover {
     width: 45px;
 }
 
 /* Tablet */
+
 @media (min-width: 768px) {
     .coverRow {
         flex-direction: row;
     }
-
     .elementR {
         padding-left: 75px;
     }
-
     .elementL {
         padding-right: 75px;
     }
 }
 
 /* Desktop */
+
 @media (min-width: 1024px) {
     .profilePhoto {
-        width: 340px; /*width/height - 40px*/
+        width: 340px;
+        /*width/height - 40px*/
     }
-
     h1 {
         font-size: 60pt;
     }
 }
 
 /* To animations */
+
 #photo1 {
     transform: translateX(-200%);
 }

@@ -17,16 +17,19 @@ header {
     width: 150px;
 }
 
-footer > p {
+footer>p {
     color: #ffffff;
 }
 
 /* Menu-mobile */
-#menu-bar { /*Button to display the menu*/
+
+#menu-bar {
+    /*Button to display the menu*/
     display: none;
 }
 
-.icon-menu { /*icon menu*/
+.icon-menu {
+    /*icon menu*/
     margin-top: 15px;
     width: 25px;
     cursor: pointer;
@@ -70,21 +73,21 @@ footer > p {
     color: #293033;
 }
 
-#menu-bar:checked ~ .menu {
+#menu-bar:checked~.menu {
     transform: translateY(0%);
 }
 
-#menu-bar:checked + .label-menu {
+#menu-bar:checked+.label-menu {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-footer > nav > ul > li {
+footer>nav>ul>li {
     display: block;
     padding: 2px 10px;
 }
 
-footer > nav > ul > li > a {
+footer>nav>ul>li>a {
     height: 0;
     padding: 0;
     color: #ffffff;
@@ -99,7 +102,7 @@ footer > nav > ul > li > a {
     transition: background-position 500ms ease;
 }
 
-footer > nav > ul > li >a:hover {
+footer>nav>ul>li>a:hover {
     background-position: 0 100%;
 }
 
@@ -109,18 +112,19 @@ footer {
 }
 
 /* Tablet */
+
 @media (min-width: 768px) {
     .menu a {
         padding: 13px;
         font-size: 16pt;
     }
-
     footer {
         font-size: 15pt;
     }
 }
 
 /* Desktop */
+
 @media (min-width: 1024px) {
     .menu {
         position: static;
@@ -129,11 +133,9 @@ footer {
         height: auto;
         align-items: center;
     }
-
-    .menu > ul {
+    .menu>ul {
         display: flex;
     }
-
     .menu a {
         height: 0;
         padding: 0;
@@ -147,35 +149,28 @@ footer {
         background-position: 100%;
         transition: background-position 500ms ease;
     }
-
     .menu a:hover {
         background-position: 0 100%;
     }
-
-    .menu ul > li {
+    .menu ul>li {
         list-style: none;
         margin: 0 20px;
     }
-
-    .icon-menu, .label-menu{
+    .icon-menu, .label-menu {
         display: none;
     }
-
     header {
         justify-content: space-between;
         flex-direction: row;
     }
-
     header, footer {
-        max-width: 1400px; 
+        max-width: 1400px;
         padding: 20px 18%;
     }
-
-    footer > nav > ul > li {
+    footer>nav>ul>li {
         display: inline;
         padding: 2px 10px;
     }
-
     footer {
         justify-content: space-between;
     }

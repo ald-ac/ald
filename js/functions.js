@@ -1,9 +1,9 @@
 export function buildHTMLProj(projects, section) {
-    let fragment = document.createDocumentFragment(); 
+    let fragment = document.createDocumentFragment();
 
-    projects.forEach( project => {
-    //important data
-    const {id, name, profilePicture, shortDescription } = project;
+    projects.forEach(project => {
+        //important data
+        const { id, name, profilePicture, shortDescription } = project;
 
         let htmlProject = document.createElement('article');
         htmlProject.innerHTML = `
@@ -18,7 +18,7 @@ export function buildHTMLProj(projects, section) {
 
         const detailsBtn = document.createElement('a');
         detailsBtn.textContent = 'Detalles';
-        detailsBtn.href = './project.html?id='+id; 
+        detailsBtn.href = './project.html?id=' + id;
         divData.appendChild(detailsBtn);
 
         htmlProject.appendChild(divData);

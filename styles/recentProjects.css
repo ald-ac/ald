@@ -1,8 +1,8 @@
-.project > section > article > img {
+.project>section>article>img {
     width: 150px;
 }
 
-.project > section > article {
+.project>section>article {
     width: 90%;
     /* desktop - 90% */
     background-color: rgba(41, 48, 51, 0.04);
@@ -15,12 +15,11 @@
     transition: all 500ms;
 }
 
-.project > section > article:hover {
+.project>section>article:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 
-.project > section > article > div {
+.project>section>article>div {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
@@ -29,18 +28,18 @@
     /* padding-left: 30px; */
 }
 
-.project > section > article > div > p, a {
+.project>section>article>div>p, a {
     margin-top: 15px;
 }
 
-.project > section > article > div > p {
+.project>section>article>div>p {
     font-size: 12pt;
     font-weight: 400;
     text-align: justify;
     line-height: 151%;
 }
 
-.project > section > article > div > a {
+.project>section>article>div>a {
     text-align: center;
     background-color: #293033;
     color: #ffffff;
@@ -48,36 +47,34 @@
     transition: all 500ms;
 }
 
-.project > section > article > div > a:hover {
+.project>section>article>div>a:hover {
     color: #7FFF2A;
 }
 
 /* Tablet */
+
 @media (min-width: 768px) {
-    .project > section > article {
+    .project>section>article {
         flex-direction: row;
     }
-
-    .project > section > article > div {
+    .project>section>article>div {
         padding-left: 30px;
         text-align: left;
     }
-
-    .project > section > article > div > p {
+    .project>section>article>div>p {
         font-size: 15pt;
     }
-
-    .project > section > article > div > a {
+    .project>section>article>div>a {
         font-size: 16pt;
     }
 }
 
 /* Desktop */
+
 @media (min-width: 1024px) {
-    .project > section > article > img {
+    .project>section>article>img {
         width: 200px;
     }
-
     /* .project > section > article > div > p {
         font-size: 12pt;
     } */

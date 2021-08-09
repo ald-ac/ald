@@ -11,7 +11,7 @@
     flex-wrap: wrap;
 }
 
-.main-skills > img {
+.main-skills>img {
     width: 150px;
 }
 
@@ -25,14 +25,14 @@
     text-align: center;
 }
 
-.skill > ul > li {
+.skill>ul>li {
     font-size: 16pt;
     font-weight: 100;
     list-style: none;
     line-height: 200%;
 }
 
-.skill > h2 {
+.skill>h2 {
     font-weight: 400;
     color: #ffffff;
     margin-top: 10px;

@@ -18,10 +18,10 @@ async function loadProject() {
 }
 
 function buildHTML(project) {
-    const { name, profilePicture, pictures, description, codeUrl, projectUrl} = project;
+    const { name, profilePicture, pictures, description, codeUrl, projectUrl } = project;
 
     //Project HTML
-    let individualProject = document.createElement('div'); 
+    let individualProject = document.createElement('div');
     individualProject.classList.add('individualProject');
     individualProject.innerHTML = `
         <div class="desc-header">
