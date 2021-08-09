@@ -7,7 +7,10 @@ export const getProjects = async limit => {
         let urlP = limit ? url+'/projects?_sort=date&_limit=2' : url+'/projects?_sort=date';
 
         const res = await fetch(urlP),
-        projects = await res.json(); 
+        projects = await res.json();
+
+        //Remove loader then response 
+        // document.querySelector('#loader').remove(); 
 
         if(!res.ok) throw {
             status:res.status, statusText:res.statusText
@@ -26,6 +29,9 @@ export const getProject = async idProject => {
     try {
         const res = await fetch(url+'/projects/'+idProject),
         project = await res.json(); 
+
+        //Remove loader then response 
+        document.querySelector('#loader').remove();
 
         if(!res.ok) throw {
             status:res.status, statusText:res.statusText
