@@ -10,6 +10,16 @@
 @import url("./styles/aboutMe.css");
 
 
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Share Tech Mono';
+    src: url('./fonts/ShareTechMono-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
