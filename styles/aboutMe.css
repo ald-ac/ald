@@ -28,6 +28,7 @@
     background-color: #293033;
     padding: 10px 10px;
     color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .present-text > div {
@@ -56,6 +57,11 @@
 
 .down-class > a {
     color: #293033;
+    transition: all 500ms;
+}
+
+.down-class > a:hover {
+    color: #08a7eb;
 }
 
 /* Tablet */
