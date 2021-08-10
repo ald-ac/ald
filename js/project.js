@@ -19,7 +19,7 @@ async function loadProject() {
 
 function buildHTML(project) {
     const { name, profilePicture, pictures, description, codeUrl, projectUrl } = project;
-
+    //console.log(proyectUrl);
     //Project HTML
     let individualProject = document.createElement('div');
     individualProject.classList.add('individualProject');
@@ -47,13 +47,15 @@ function buildHTML(project) {
     });
     //Adding to html project
     individualProject.appendChild(images);
-
+    
     let buttons = document.createElement('div');
     buttons.classList.add('project-buttons');
-    buttons.innerHTML = `
-        <a href="${codeUrl}">Código</a>
-        <a href="${projectUrl}">Ver</a>
-    `;
+    buttons.innerHTML = `<a href="${codeUrl}">Código</a>`;
+    //When the project doesn't have link to preview
+    if(projectUrl != undefined) {
+        buttons.innerHTML += `<a href="${projectUrl}">Ver</a>`;
+    }
+    
     individualProject.appendChild(buttons);
 
     //Adding to container on DOM
