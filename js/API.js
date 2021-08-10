@@ -4,7 +4,7 @@ const url = "https://api-aldpage.herokuapp.com";
 export const getProjects = async limit => {
     try {
         //Order by date from API
-        let urlP = limit ? url + '/projects?_sort=date&_limit=2' : url + '/projects?_sort=date';
+        let urlP = limit ? url + '/projects?_sort=date:desc&_limit=2' : url + '/projects?_sort=date';
 
         const res = await fetch(urlP),
             projects = await res.json();
